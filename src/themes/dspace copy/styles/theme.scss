@@ -13,24 +13,3 @@ $theme-colors: map-merge($theme-colors, $theme-custom-semantic-colors);
 @import '../../../styles/bootstrap_variables_mapping.scss';
 @import '../../../styles/_truncatable-part.component.scss';
 @import './_global-styles.scss';
-
-/*** HEADER CBPF - AZUL COM LINKS BRANCOS ***/
-$ds-header-background-color: #004B8D;           // Header azul institucional
-$navbar-dark-color: #FFFFFF;                    // Links do header BRANCOS
-
-// Links header sempre brancos (força override)
-:global(.navbar-nav) {
-  a {
-    color: #FFFFFF !important;
-    &:hover {
-      color: #FFFFFF !important;
-      background-color: rgba(255,255,255,0.1) !important;
-    }
-  }
-}
-
-// Logo e texto header brancos
-:global(.navbar-brand), 
-:global(.navbar-brand a) {
-  color: #FFFFFF !important;
-}

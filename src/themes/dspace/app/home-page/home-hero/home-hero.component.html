@@ -1,0 +1,23 @@
+<section class="home-hero d-flex align-items-center">
+  <div class="container text-center">
+    <h1 class="hero-title">Bem-vindo ao Repositório de Dados de Pesquisa</h1>
+    <p class="hero-subtitle">Compartilhe, preserve e gerencie seus dados científicos com segurança e visibilidade.</p>
+
+    <form class="hero-search d-flex justify-content-center align-items-center" (submit)="onSearch($event)">
+      <div class="input-group hero-input w-75">
+        <!-- Reaproveitar o componente de busca se desejar -->
+        <ds-search-navbar></ds-search-navbar>
+      </div>
+    </form>
+
+    <div class="hero-filters d-flex justify-content-center gap-2 mt-3">
+      <button class="btn btn-outline-primary pill">Procurar por Dataverse <span class="badge bg-secondary">6</span></button>
+      <button class="btn btn-outline-primary pill">Procurar por Conjunto de Dados <span class="badge bg-secondary">3</span></button>
+      <button class="btn btn-outline-primary pill">Procurar por Arquivos <span class="badge bg-secondary">17</span></button>
+    </div>
+
+    <div class="mt-3">
+      <a class="btn btn-link btn-explore">Explorar</a>
+    </div>
+  </div>
+</section>

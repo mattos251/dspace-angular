@@ -45,14 +45,14 @@ $font-family-sans-serif: 'Nunito', -apple-system, BlinkMacSystemFont, "Segoe UI"
 //$cyan:    #17a2b8 !default;
 
 // Override semantic colors here
-$primary:   #43515f;  // Gray
-$secondary: #495057;  // As Bootstrap $gray-700
-$success:   #92c642;  // Lime
-$info:      #1e6f90;  // Light blue
-$warning:   #ec9433;  // Orange
-$danger:    #cf4444;  // Red
-$light:     #f8f9fa;  // As Bootstrap $gray-100
-$dark:      #43515f;  // Dark blue
+// $primary:   #43515f;  // Gray
+// $secondary: #495057;  // As Bootstrap $gray-700
+// $success:   #92c642;  // Lime
+// $info:      #1e6f90;  // Light blue
+// $warning:   #ec9433;  // Orange
+// $danger:    #cf4444;  // Red
+// $light:     #f8f9fa;  // As Bootstrap $gray-100
+// $dark:      #43515f;  // Dark blue
 
 // Add new semantic colors here (you don't need to add existing semantic colors)
 $theme-custom-semantic-colors: (
@@ -60,25 +60,69 @@ $theme-custom-semantic-colors: (
 
 /*** OTHER BOOTSTRAP VARIABLES ***/
 
-$min-contrast-ratio: 2.06 !default;
+// $min-contrast-ratio: 2.06 !default;
 
-$body-color: #343a40;       // As Bootstrap $gray-800
+// $body-color: #343a40;       // As Bootstrap $gray-800
 
-$link-color: #1e6f90;       // Blue green, as DSpace $info
-$link-decoration: none;
-$link-hover-color: darken($link-color, 15%);
-$link-hover-decoration: underline;
+// $link-color: #1e6f90;       // Blue green, as DSpace $info
+// $link-decoration: none;
+// $link-hover-color: darken($link-color, 15%);
+// $link-hover-decoration: underline;
 
-$table-accent-bg: #f8f9fa;  // As Bootstrap $gray-100
-$table-hover-bg: #ced4da;   // As Bootstrap $gray-400
+// $table-accent-bg: #f8f9fa;  // As Bootstrap $gray-100
+// $table-hover-bg: #ced4da;   // As Bootstrap $gray-400
 
-$navbar-dark-color: #fff;
+// $navbar-dark-color: #fff;
 
 
 /*** CUSTOM DSPACE VARIABLES ***/
 
-$ds-home-news-link-color: #D2FC93;
-$ds-header-navbar-border-bottom-color: #92c642;
+// $ds-home-news-link-color: #D2FC93;
+// $ds-header-navbar-border-bottom-color: #92c642;
 
-$ds-breadcrumb-link-color: #154E66 !default;
-$ds-breadcrumb-link-active-color: #040D11 !default;
+// $ds-breadcrumb-link-color: #154E66 !default;
+// $ds-breadcrumb-link-active-color: #040D11 !default;
+
+
+/*** CORES CBPF/NIB - PRINCIPAIS ***/
+$primary:   #004B8D;        // Azul institucional ✓ HEADER, botões principais
+$secondary: #2F6FA3;        // Azul claro ✓ Hovers, secundários
+
+/*** LAYOUT - MAIS CLARO ***/
+$info:      #005D9F;        // Botões de ação/busca
+$dark:      #004B8D;        // MESMO AZUL INSTITUCIONAL (não preto!)
+$navbar-dark-color: rgba(0,75,141,0.95);  // Azul institucional translúcido
+
+/*** ESTADOS ***/
+$success:   #28a745;
+$warning:   #ffc107;        // Amarelo mais visível
+$danger:    #dc3545;
+
+/*** NEUTROS - MUITO IMPORTANTES ***/
+$white:     #FFFFFF;
+$light:     #F8F9FA;        // Fundo claro geral
+$gray-100:  #F8F9FA;        // Sidebar admin clara!
+$gray-200:  #E9ECEF;
+$body-color: #2D3748;       // Texto escuro legível
+$gray-600:  #4A5568;
+$gray-500:  #718096;
+
+/*** SIDEBAR ADMIN - ESPECÍFICO ***/
+$sidebar-bg: #F8F9FA;           // Fundo sidebar CLARO
+$sidebar-hover: #E9ECEF;        // Hover claro
+$sidebar-active: #004B8D;       // Ativo azul institucional
+
+/*** LINKS ***/
+$link-color: #004B8D;
+$link-hover-color: #2F6FA3;
+
+/*** DSPACE ESPECÍFICAS ***/
+$ds-header-navbar-border-bottom-color: #004B8D;
+$ds-home-news-link-color: #005D9F;
+$ds-breadcrumb-link-color: #004B8D;
+$ds-breadcrumb-link-active-color: #2D3748;
+
+/*** OUTROS ***/
+$min-contrast-ratio: 2.06;
+$link-decoration: none;
+$link-hover-decoration: underline;
