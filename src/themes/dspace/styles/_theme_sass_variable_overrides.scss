@@ -60,6 +60,8 @@ $theme-custom-semantic-colors: (
 
 /*** OTHER BOOTSTRAP VARIABLES ***/
 
+$bs-border-radius-sm: 0.25rem;
+
 // $min-contrast-ratio: 2.06 !default;
 
 // $body-color: #343a40;       // As Bootstrap $gray-800
@@ -112,15 +114,20 @@ $sidebar-bg: #F8F9FA;           // Fundo sidebar CLARO
 $sidebar-hover: #E9ECEF;        // Hover claro
 $sidebar-active: #004B8D;       // Ativo azul institucional
 
+$ds-admin-sidebar-bg:  rgb(0, 28.96, 54.3);           // Fundo sidebar CLARO
+$ds-admin-sidebar-header-bg: rgb(0, 28.96, 54.3);
+
 /*** LINKS ***/
 $link-color: #004B8D;
 $link-hover-color: #2F6FA3;
+
 
 /*** DSPACE ESPECÍFICAS ***/
 $ds-header-navbar-border-bottom-color: #004B8D;
 $ds-home-news-link-color: #005D9F;
 $ds-breadcrumb-link-color: #004B8D;
 $ds-breadcrumb-link-active-color: #2D3748;
+$ds-header-bg: #004B8D;
 
 /*** OUTROS ***/
 $min-contrast-ratio: 2.06;

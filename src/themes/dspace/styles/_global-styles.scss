@@ -22,6 +22,12 @@
   }
 }
 
+
+.form-control {
+  font-size: 1.4rem;
+}
+
+
 // Links header sempre brancos (força override)
 :global(.navbar-nav) {
   a {

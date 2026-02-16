@@ -6,10 +6,12 @@
       height: var(--ds-header-height);
     }
 
-    background-color: var(--ds-header-bg);
-
     &-container {
       min-height: var(--ds-header-height);
+    }
+
+    .header-main-container {
+       background-color: var(--ds-header-bg);
     }
   }
 
