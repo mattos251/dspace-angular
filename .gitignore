@@ -42,3 +42,15 @@ yarn-error.log
 junit.xml
 
 /src/mirador-viewer/config.local.js
+
+
+# 👇 ADICIONE ESTAS LINHAS:
+config/config.yml
+config/config.*.yml
+dist/
+node_modules/.cache/
+# DSpace Configs locais
+config/config.yml
+config/config.*.yml
+dist/
+node_modules/.cache/
