@@ -2213,11 +2213,15 @@
 
   "home.description": "",
 
+  "home.description.text": "Share, preserve, and manage your scientific data securely and with visibility.",
+
   "home.breadcrumbs": "Home",
 
   "home.search-form.placeholder": "Search the repository ...",
 
   "home.title": "Home",
+
+  "home.title.text": "Welcome to the Institutional Repository of the Brazilian Center for Physics Research (CBPF).",
 
   "home.top-level-communities.head": "Communities in DSpace",
 

@@ -1,0 +1,18 @@
+// Admin Sidebar styling for DSpace theme
+// This file overrides the admin sidebar link colors to white
+
+:host {
+  ::ng-deep {
+    nav#admin-sidebar {
+      a {
+        color: #FFFFFF !important;
+        text-decoration: none;
+
+        &:hover, &:focus {
+          color: #FFFFFF !important;
+          background-color: rgba(255, 255, 255, 0.1) !important;
+        }
+      }
+    }
+  }
+}

@@ -3327,6 +3327,9 @@
   // "home.description": "",
   "home.description": "",
 
+  // "home.description.text": "",
+  "home.description.text": "Compartilhe, preserve e gerencie seus dados científicos com segurança e transparência.",
+
   // "home.breadcrumbs": "Home",
   "home.breadcrumbs": "Início",
 
@@ -3335,6 +3338,9 @@
 
   // "home.title": "Home",
   "home.title": "Início",
+
+  // "home.title.text": "",
+  "home.title.text": "Bem-vindo ao Repositório Institucional do Centro Brasileiro de Pesquisas em Física (CBPF).",
 
   // "home.top-level-communities.head": "Communities in DSpace",
   "home.top-level-communities.head": "Comunidades no DSpace",
