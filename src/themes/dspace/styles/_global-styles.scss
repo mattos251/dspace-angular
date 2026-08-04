@@ -21,3 +21,26 @@
     font-size: 1.1rem
   }
 }
+
+.form-control:focus, .page-link:focus {
+    box-shadow: none;
+    outline: 1px solid rgb(96 106 115 / 20%);
+}
+
+
+// Links header sempre brancos (força override)
+:global(.navbar-nav) {
+  a {
+    color: #FFFFFF !important;
+    &:hover {
+      color: #FFFFFF !important;
+      background-color: rgba(255,255,255,0.1) !important;
+    }
+  }
+}
+
+// Logo e texto header brancos
+:global(.navbar-brand), 
+:global(.navbar-brand a) {
+  color: #FFFFFF !important;
+}

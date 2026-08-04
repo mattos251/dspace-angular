@@ -51,15 +51,14 @@
         color: inherit;
       }
 
-      color: rgba(255, 255, 255, 0.7);
-      background-color: rgba(0, 0, 0, 0.1);
+      opacity: 0.3;
       position: absolute;
       right: var(--bs-spacer);
       bottom: 0;
     }
   }
 
-  .home-news-content {
+  .jumbotron {
     background-color: transparent;
   }
 
@@ -72,8 +71,40 @@
   }
 
   .lead {
-    font-size: 1.25rem;
+    display: flex;
+    font-size: 2.25rem;
+    text-align: center;
+    font-weight: 600;
+    color: var(--bs-primary);
+
+    @media (max-width: 768px) {
+      font-size: 1.75rem;
+    }
+    
+    @media (max-width: 576px) {
+      font-size: 1.5rem;
+    }
+    
+    @media (max-width: 380px) {
+      font-size: 1.25rem; 
+    }
+  }
+
+  .subtitle-lead {
+    display: flex;
+    justify-content: center;
+    text-align: center;
     font-weight: 400;
+    color: var(--bs-gray-600);
+
+      
+    @media (max-width: 768px) {
+      font-size: 1rem;
+    }
+    
+    @media (max-width: 576px) {
+      font-size: 0.95rem;
+    }
   }
 }
 

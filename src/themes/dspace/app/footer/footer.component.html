@@ -1,0 +1,63 @@
+<footer>
+  <!-- Top Footer with 2-Column Layout -->
+  <div class="top-footer">
+    <div class="container-fluid">
+      <div class="footer-grid">
+        
+        <div class="footer-column left-column">
+          <div class="logo-container">
+            <img src="assets/dspace/images/marca-cbpf-positivo_horizontal.png" alt="CBPF Logo" class="footer-logo" />
+          </div>
+
+          <div class="institution-info">
+            <ul class="list-unstyled contact-list">
+              <li class="contact-item">
+                  Rio de Janeiro - RJ - Brasil
+              </li>
+              <li class="contact-item">
+                  Rua Dr. Xavier Sigaud, 150 - Urca
+              </li>
+              <li class="contact-item">
+                  CEP: 22290-180
+              </li>
+            </ul>            
+          </div>
+        </div>
+
+        <div class="footer-column right-column">
+          <div class="social-links">
+              <ul class="list-unstyled social-list">
+                <li>
+                  <a href="https://www.instagram.com/cbpfoficial/" target="_blank" rel="noopener noreferrer"
+                    class="social-icon instagram" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/CBPFvideos" target="_blank" rel="noopener noreferrer"
+                    class="social-icon youtube" title="YouTube">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/cbpf.mctic/" target="_blank" rel="noopener noreferrer"
+                    class="social-icon facebook" title="Facebook">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Footer -->
+  <div class="bottom-footer p-3 d-flex justify-content-center align-items-center text-white">
+    <div class="content-container text-center">
+      <p class="m-0 footer-text">
+        {{ 'footer.copyright' | translate:{year: dateObj | date:'y'} }}
+      </p>
+    </div>
+  </div>
+</footer>

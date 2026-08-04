@@ -23,18 +23,8 @@ import { ImpersonateNavbarComponent } from '../../../../app/shared/impersonate-n
   selector: 'ds-themed-header',
   styleUrls: ['header.component.scss'],
   templateUrl: 'header.component.html',
-  imports: [
-    AsyncPipe,
-    ContextHelpToggleComponent,
-    ImpersonateNavbarComponent,
-    NgbDropdownModule,
-    RouterLink,
-    ThemedAuthNavMenuComponent,
-    ThemedLangSwitchComponent,
-    ThemedNavbarComponent,
-    ThemedSearchNavbarComponent,
-    TranslateModule,
-  ],
+  standalone: true,
+  imports: [NgbDropdownModule, ThemedLangSwitchComponent, RouterLink, ThemedSearchNavbarComponent, ContextHelpToggleComponent, ThemedAuthNavMenuComponent, ImpersonateNavbarComponent, ThemedNavbarComponent, TranslateModule, AsyncPipe],
 })
 export class HeaderComponent extends BaseComponent implements OnInit {
   public isNavBarCollapsed$: Observable<boolean>;

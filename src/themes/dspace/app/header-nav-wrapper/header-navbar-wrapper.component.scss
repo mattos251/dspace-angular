@@ -28,6 +28,7 @@
 
   ::ng-deep {
     .ds-menu-item, .ds-menu-toggler-wrapper {
+      white-space: nowrap;
       text-decoration: none;
     }
 

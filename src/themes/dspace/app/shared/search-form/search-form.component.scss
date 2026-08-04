@@ -1,0 +1,58 @@
+// temporary fix for bootstrap 4 beta btn color issue
+.btn-secondary {
+  background-color: var(--bs-input-bg);
+  color: var(--bs-input-color);
+}
+
+.scope-button {
+  max-width: var(--ds-search-form-scope-max-width);
+}
+
+.input-group.large-search .form-control {
+  min-height: 50px;
+  font-size: 16px;
+  border-radius: 50px;
+
+  @media (max-width: 576px) {
+    min-height: 30px; // Mais espaço em mobile
+  }
+
+}
+
+.input-group.large-search .search-button {
+  padding: 0.5rem 2rem;
+  border-radius: 50px;
+
+  @media (max-width: 576px) {
+    padding: 0.75rem 2rem; // Mais espaço em mobile
+  }
+}
+
+.input-group.large-search {
+  display: flex;
+  gap: 0; // Garantir que fiquem colados
+  border-radius: 50px;
+  overflow: hidden; // Evitar bordas vazadas
+}
+
+.search-button {
+  transition: all 0.2s ease;
+  
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+  
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+.form-control {
+  transition: border-color 0.2s, box-shadow 0.2s;
+  
+  &:focus {
+    border-color: var(--bs-primary);
+    box-shadow: 0 0 0 3px rgba(var(--bs-primary-rgb), 0.1);
+  }
+}

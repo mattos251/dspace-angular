@@ -1,0 +1,42 @@
+<ng-container *ngVar="(communitiesRD$ | async) as communitiesRD">
+  @if (communitiesRD?.hasSucceeded ) {
+    <div class="area-communities">
+      <!-- Communities Scroll Container -->
+      <div class="communities-scroll-wrapper">
+        <button 
+          class="scroll-btn scroll-btn-prev" 
+          *ngIf="showPrevButton"
+          (click)="scrollPrev()"
+          aria-label="Scroll communities left">
+          <i class="fas fa-chevron-left" aria-hidden="true"></i>
+        </button>
+
+        <div class="communities-scroll-container" #scrollContainer (scroll)="updateScrollButtons()">
+          @for (community of communities; track community.id) {
+            <div class="community-card">
+              <a [routerLink]="['/communities', community.id]" class="community-link">
+                <div class="community-icon">
+                  <i class="fas fa-folder" aria-hidden="true"></i>
+                </div>
+                <div class="community-name" [title]="community.name">{{ getCleanName(community.name) }}</div>
+              </a>
+            </div>
+          }
+        </div>
+
+        <button 
+          class="scroll-btn scroll-btn-next" 
+          *ngIf="showNextButton"
+          (click)="scrollNext()"
+          aria-label="Scroll communities right">
+          <i class="fas fa-chevron-right" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  }
+  @if (communitiesRD?.hasFailed ) {
+    <ds-error message="{{'error.top-level-communities' | translate}}"></ds-error>
+  }
+  @if (communitiesRD?.isLoading ) {
+    <ds-loading message="{{'loading.top-level-communities' | translate}}"></ds-loading>
+  }</ng-container>
