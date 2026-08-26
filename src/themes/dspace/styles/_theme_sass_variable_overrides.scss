@@ -86,48 +86,73 @@ $bs-border-radius-sm: 0.25rem;
 // $ds-breadcrumb-link-active-color: #040D11 !default;
 
 
-/*** CORES CBPF/NIB - PRINCIPAIS ***/
-$primary:   #004B8D;        // Azul institucional ✓ HEADER, botões principais
-$secondary: #2F6FA3;        // Azul claro ✓ Hovers, secundários
+/*** CORES RI-UEM - PRINCIPAIS ***/
+
+$primary:      #B52F35;        // Vermelho institucional principal
+$secondary:    #D95F64;        // Vermelho suave - hovers e elementos secundários
+
 
 /*** LAYOUT - MAIS CLARO ***/
-$info:      #005D9F;        // Botões de ação/busca
-$dark:      #004B8D;        // MESMO AZUL INSTITUCIONAL (não preto!)
-$navbar-dark-color: rgba(0,75,141,0.95);  // Azul institucional translúcido
+
+$info:         #C8474D;        // Ações, busca e elementos de destaque
+
+$dark:         #8F252A;        // Vermelho escuro para elementos de maior contraste
+
+$navbar-dark-color: rgba(143, 37, 42, 0.95);
+
 
 /*** ESTADOS ***/
-$success:   #28a745;
-$warning:   #ffc107;        // Amarelo mais visível
-$danger:    #dc3545;
+
+$success:      #28A745;        // Verde padrão para sucesso
+$warning:      #F0AD4E;        // Amarelo mais suave
+$danger:       #D64550;        // Vermelho para erros
+
 
 /*** NEUTROS - MUITO IMPORTANTES ***/
-$white:     #FFFFFF;
-$light:     #F8F9FA;        // Fundo claro geral
-$gray-100:  #F8F9FA;        // Sidebar admin clara!
-$gray-200:  #E9ECEF;
-$body-color: #2D3748;       // Texto escuro legível
-$gray-600:  #4A5568;
-$gray-500:  #718096;
 
-/*** SIDEBAR ADMIN - ESPECÍFICO ***/
-$sidebar-bg: #F8F9FA;           // Fundo sidebar CLARO
-$sidebar-hover: #E9ECEF;        // Hover claro
-$sidebar-active: #004B8D;       // Ativo azul institucional
+$white:        #FFFFFF;
 
-$ds-admin-sidebar-bg:  rgb(0, 28.96, 54.3);           // Fundo sidebar CLARO
-$ds-admin-sidebar-header-bg: rgb(0, 28.96, 54.3);
+$light:        #F8F9FA;        // Fundo geral
+
+$gray-100:     #F7F7F7;        // Sidebar clara
+$gray-200:     #E9E9E9;        // Bordas e divisores
+$gray-300:     #DEE2E6;
+
+$body-color:   #343434;        // Texto principal
+
+$gray-600:     #5F6368;        // Texto secundário
+$gray-500:     #777777;        // Texto auxiliar
+
+
+/*** SIDEBAR ADMIN ***/
+
+$sidebar-bg:       #F7F7F7;
+$sidebar-hover:    #F0D9DA;
+$sidebar-active:   rgb(71 0 3);
+
+$ds-admin-sidebar-bg:          rgb(71 0 3);
+$ds-admin-sidebar-header-bg:  rgb(71 0 3);
+
 
 /*** LINKS ***/
-$link-color: #004B8D;
-$link-hover-color: #2F6FA3;
+
+$link-color:       #B52F35;
+$link-hover-color: #8F252A;
 
 
 /*** DSPACE ESPECÍFICAS ***/
-$ds-header-navbar-border-bottom-color: #004B8D;
-$ds-home-news-link-color: #005D9F;
-$ds-breadcrumb-link-color: #004B8D;
-$ds-breadcrumb-link-active-color: #2D3748;
-$ds-header-bg: #004B8D;
+
+$ds-header-navbar-border-bottom-color: #80252a;
+
+$ds-home-news-link-color:            #C8474D;
+
+$ds-breadcrumb-link-color:           #B52F35;
+
+$ds-breadcrumb-link-active-color:    #343434;
+
+$ds-header-bg:                       #80252a;
+
+$ds-footer-bg:                       #80252a;
 
 /*** OUTROS ***/
 $min-contrast-ratio: 2.06;

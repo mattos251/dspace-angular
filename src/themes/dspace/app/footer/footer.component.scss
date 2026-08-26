@@ -1,225 +1,41 @@
 :host {
   footer {
-    background: linear-gradient(135deg, #1e3a5f 0%, #2d4a72 100%);
-    text-align: left;
+    background: var(--ds-footer-bg);
     z-index: var(--ds-footer-z-index);
     border-top: var(--ds-footer-border);
     padding: var(--ds-footer-padding);
 
-    p {
-      margin: 0;
-    }
-
-    .top-footer {
-      background: linear-gradient(135deg, #1e3a5f 0%, #2d4a72 100%);
+    .footer-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
       color: white;
-      margin: calc(var(--ds-footer-padding) * -1);
-      margin-bottom: 0;
-      border-bottom: 4px solid #ffffff;
-
-      .container-fluid {
-        max-width: 1400px;
-        margin: 0 auto;
-      }
-
-      .footer-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 8px;
-        align-items: center;
-
-        @media (max-width: 768px) {
-          grid-template-columns: 1fr;
-          gap: 8px;
-        }
-      }
-
-      .footer-column {
-        display: flex;
-        margin: 10px;
-
-        &.left-column {
-          gap: 8px;
-        }
-
-        &.right-column {
-          justify-content: end;
-          @media (max-width: 768px) {
-            justify-content: center;
-            
-          }
-        }
-
-
-        .social-links {
-
-          ol, ul, dl {
-            margin-top: 0px;
-            margin-bottom: 0rem;
-          }
-  
-          .social-list {
-            display: flex;
-            gap: 12px;
-            flex-wrap: wrap;
-  
-            li {
-              a.social-icon {
-                color: white;
-                text-decoration: none;
-                padding: 8px 12px;
-                border-radius: 8px;
-                transition: all 0.3s ease;
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                border: 1px solid transparent;
-                background-color: rgba(255, 255, 255, 0.1);
-  
-                i {
-                  font-size: 1.2rem;
-                }
-  
-                &:hover {
-                  background-color: var(--primary-color);
-                  color: #e1e2e4;
-                  border-color: var(--primary-color);
-                  transform: translateY(-2px);
-                }
-  
-                &:focus-visible {
-                  outline: 2px solid var(--primary-color);
-                  outline-offset: 2px;
-                }
-              }
-            }
-          }
-        }
-      }
-
-      .logo-column {
-        .logo-container {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-
-          .footer-logo {
-            max-height: 132px;
-            max-width: 100%;
-            object-fit: contain;
-            transition: all 0.3s ease;
-
-            &:hover {
-              opacity: 0.9;
-            }
-          }
-        }
-      }
-
-
-      .institution-info {
-        align-content: center;
-        width: 100%;
-        ul {
-          margin: 0;
-        }
-
-        i{
-          padding-top: 4px;
-        }
-
-        .institution-address {
-          font-size: 0.95rem;
-          line-height: 1.8;
-          margin: 0 0 10px 0;
-          opacity: 0.95;
-          font-weight: 500;
-        }
-        .location-text {
-          font-size: 0.95rem;
-          line-height: 1.8;
-          margin: 0 0 10px 0;
-          opacity: 0.95;
-          font-weight: 500;
-        }
-
-        
-      }
-
-      .left-column {
-        .logo-container {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-
-          .footer-logo {
-            max-height: 132px;
-            max-width: 100%;
-            object-fit: contain;
-            transition: all 0.3s ease;
-
-            &:hover {
-              opacity: 0.9;
-            }
-          }
-        }
-
-        .institution-info {
-          ul {
-            margin: 0;
-          }
-
-          .contact-list {
-            font-size: 0.95rem;
-            line-height: 1.8;
-            opacity: 0.95;
-          }
-        }
-      }
     }
 
-    .bottom-footer {
-      background-color: rgba(0, 0, 0, 0.1);
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    .footer-logo {
+      display: block;
+      max-width: min(12rem, 40vw);
+      max-height: 3rem;
+      object-fit: contain;
+    }
+
+    .footer-text {
+      margin: 0;
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-align: right;
+    }
+
+    @media (max-width: 576px) {
+      .footer-content {
+        flex-direction: column;
+        justify-content: center;
+      }
 
       .footer-text {
-        font-size: 0.9rem;
-        font-weight: 500;
+        text-align: center;
       }
-
-      .footer-links {
-        // ul {
-        //   margin: 0;
-        // }
-        li {
-          a, .btn-link {
-            padding: 6px 12px;
-            color: white;
-            font-size: 0.85rem;
-            transition: all 0.3s ease;
-            text-decoration: none;
-
-            &:hover {
-              opacity: 0.8;
-              text-decoration: underline;
-            }
-
-            &:focus {
-              box-shadow: none;
-              text-decoration: underline;
-            }
-
-            &:focus-visible {
-              box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
-              border-radius: 4px;
-            }
-          }
-        }
-      }
-    }
-
-    .btn {
-      box-shadow: none;
     }
   }
 }
