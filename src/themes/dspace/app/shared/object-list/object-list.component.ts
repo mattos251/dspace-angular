@@ -30,12 +30,18 @@ import { SelectableListService } from 'src/app/shared/object-list/selectable-lis
 @Component({
   changeDetection: ChangeDetectionStrategy.Default,
   encapsulation: ViewEncapsulation.Emulated,
-  selector: 'ds-base-object-list',
+  selector: 'ds-themed-object-list',
   styleUrls: ['./object-list.component.scss'],
   templateUrl: './object-list.component.html',
   animations: [fadeIn],
-  standalone: true,
-  imports: [PaginationComponent, NgClass, SelectableListItemControlComponent, ImportableListItemControlComponent, ListableObjectComponentLoaderComponent, BrowserOnlyPipe],
+  imports: [
+    BrowserOnlyPipe,
+    ImportableListItemControlComponent,
+    ListableObjectComponentLoaderComponent,
+    NgClass,
+    PaginationComponent,
+    SelectableListItemControlComponent,
+  ],
 })
 export class ObjectListComponent {
   /**

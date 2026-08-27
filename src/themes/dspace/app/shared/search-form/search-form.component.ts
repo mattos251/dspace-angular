@@ -33,11 +33,17 @@ import { currentPath } from 'src/app/shared/utils/route.utils';
 import { ScopeSelectorModalComponent } from 'src/app/shared/search-form/scope-selector-modal/scope-selector-modal.component';
 
 @Component({
-  selector: 'ds-base-search-form',
+  selector: 'ds-themed-search-form',
   styleUrls: ['./search-form.component.scss'],
   templateUrl: './search-form.component.html',
-  standalone: true,
-  imports: [FormsModule, NgbTooltipModule, AsyncPipe, TranslateModule, BrowserOnlyPipe, NgClass],
+  imports: [
+    AsyncPipe,
+    BrowserOnlyPipe,
+    FormsModule,
+    NgClass,
+    NgbTooltipModule,
+    TranslateModule,
+  ],
 })
 /**
  * Component that represents the search form

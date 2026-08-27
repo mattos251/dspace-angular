@@ -53,7 +53,6 @@ export interface SelectionConfig {
     fadeIn,
     fadeInOut,
   ],
-  standalone: true,
   imports: [
     AsyncPipe,
     ErrorComponent,
@@ -76,7 +75,7 @@ export class SearchResultsComponent {
    */
   activeFilters$: Observable<SearchFilter[]>;
 
-  @Input() layout: 'list' | 'card' = 'card'
+  @Input() layout: 'list' | 'card' = 'card';
 
   /**
    * Filter applied to show labels, once populated the activeFilters$ will be loaded

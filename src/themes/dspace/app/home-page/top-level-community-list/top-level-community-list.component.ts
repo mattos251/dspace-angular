@@ -5,12 +5,13 @@ import {
 import {
   ChangeDetectionStrategy,
   Component,
+  ElementRef,
   Inject,
   OnDestroy,
   OnInit,
   ViewChild,
-  ElementRef,
 } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import {
   BehaviorSubject,
@@ -38,20 +39,25 @@ import { ErrorComponent } from 'src/app/shared/error/error.component';
 import { ThemedLoadingComponent } from 'src/app/shared/loading/themed-loading.component';
 import { PaginationComponentOptions } from 'src/app/shared/pagination/pagination-component-options.model';
 import { VarDirective } from 'src/app/shared/utils/var.directive';
-import { ViewMode } from 'src/app/core/shared/view-mode.model';
-import { RouterModule } from '@angular/router';
 
 /**
  * this component renders the Top-Level Community list
  */
 @Component({
-  selector: 'ds-base-top-level-community-list',
+  selector: 'ds-themed-top-level-community-list',
   styleUrls: ['./top-level-community-list.component.scss'],
   templateUrl: './top-level-community-list.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   animations: [fadeInOut],
-  standalone: true,
-  imports: [VarDirective, ErrorComponent, ThemedLoadingComponent, AsyncPipe, TranslateModule, CommonModule, RouterModule],
+  imports: [
+    AsyncPipe,
+    CommonModule,
+    ErrorComponent,
+    RouterModule,
+    ThemedLoadingComponent,
+    TranslateModule,
+    VarDirective,
+  ],
 })
 
 export class TopLevelCommunityListComponent implements OnInit, OnDestroy {

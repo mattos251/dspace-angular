@@ -51,8 +51,15 @@ import { ListableObject } from 'src/app/shared/object-collection/shared/listable
   selector: 'ds-viewable-collection',
   styleUrls: ['./object-collection.component.scss'],
   templateUrl: './object-collection.component.html',
-  standalone: true,
-  imports: [ThemedObjectListComponent, NgClass, ObjectGridComponent, ObjectDetailComponent, AsyncPipe, ObjectTableComponent, ObjectGeospatialMapComponent],
+  imports: [
+    AsyncPipe,
+    NgClass,
+    ObjectDetailComponent,
+    ObjectGeospatialMapComponent,
+    ObjectGridComponent,
+    ObjectTableComponent,
+    ThemedObjectListComponent,
+  ],
 })
 export class ObjectCollectionComponent implements OnInit {
   /**

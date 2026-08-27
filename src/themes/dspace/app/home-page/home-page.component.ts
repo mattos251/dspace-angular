@@ -1,8 +1,4 @@
-import {
-  AsyncPipe,
-  NgClass,
-  NgTemplateOutlet,
-} from '@angular/common';
+import { NgTemplateOutlet } from '@angular/common';
 import {
   Component,
   Inject,
@@ -21,18 +17,24 @@ import { Site } from 'src/app/core/shared/site.model';
 import { SuggestionsPopupComponent } from 'src/app/notifications/suggestions/popup/suggestions-popup.component';
 import { ThemedConfigurationSearchPageComponent } from 'src/app/search-page/themed-configuration-search-page.component';
 import { ThemedSearchFormComponent } from 'src/app/shared/search-form/themed-search-form.component';
-import { PageWithSidebarComponent } from 'src/app/shared/sidebar/page-with-sidebar.component';
 import { HomeCoarComponent } from 'src/app/home-page/home-coar/home-coar.component';
 import { ThemedHomeNewsComponent } from 'src/app/home-page/home-news/themed-home-news.component';
-import { RecentItemListComponent } from 'src/app/home-page/recent-item-list/recent-item-list.component';
 import { ThemedTopLevelCommunityListComponent } from 'src/app/home-page/top-level-community-list/themed-top-level-community-list.component';
 
 @Component({
-  selector: 'ds-base-home-page',
+  selector: 'ds-themed-home-page',
   styleUrls: ['./home-page.component.scss'],
   templateUrl: './home-page.component.html',
-  standalone: true,
-  imports: [ThemedHomeNewsComponent, NgTemplateOutlet, ThemedSearchFormComponent, ThemedTopLevelCommunityListComponent, SuggestionsPopupComponent, ThemedConfigurationSearchPageComponent, HomeCoarComponent, TranslateModule],
+  imports: [
+    HomeCoarComponent,
+    NgTemplateOutlet,
+    SuggestionsPopupComponent,
+    ThemedConfigurationSearchPageComponent,
+    ThemedHomeNewsComponent,
+    ThemedSearchFormComponent,
+    ThemedTopLevelCommunityListComponent,
+    TranslateModule,
+  ],
 })
 export class HomePageComponent implements OnInit {
 
