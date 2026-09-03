@@ -20,3 +20,14 @@ rest:
   baseUrl: http://localhost:8080/server
 
   actuators:
+
+languages:
+  - code: pt-BR
+    label: Português do Brasil
+    active: true
+  - code: es
+    label: Español
+    active: true
+  - code: en
+    label: English
+    active: true

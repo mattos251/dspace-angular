@@ -72,7 +72,7 @@ export class FileDownloadLinkComponent implements OnInit {
   /**
    * A boolean representing if link is shown in same tab or in a new one.
    */
-  @Input() isBlank = true;
+  @Input() isBlank = false;
 
   @Input() enableRequestACopy = true;
 
