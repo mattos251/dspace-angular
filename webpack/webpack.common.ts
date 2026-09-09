@@ -112,6 +112,6 @@ export const commonExports = {
     ],
   },
   ignoreWarnings: [
-    /src\/themes\/[^/]+\/.*theme.module.ts is part of the TypeScript compilation but it's unused/,
+    /src\/themes\/[^/]+\/.* is part of the TypeScript compilation but it's unused/,
   ]
 };
