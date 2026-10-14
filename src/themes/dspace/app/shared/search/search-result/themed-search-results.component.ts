@@ -4,7 +4,6 @@ import {
   Input,
   Output,
 } from '@angular/core';
-
 import { SortOptions } from 'src/app/core/cache/models/sort-options.model';
 import { PaginatedList } from 'src/app/core/data/paginated-list.model';
 import { RemoteData } from 'src/app/core/data/remote-data';
@@ -13,9 +12,10 @@ import { DSpaceObject } from 'src/app/core/shared/dspace-object.model';
 import { ViewMode } from 'src/app/core/shared/view-mode.model';
 import { CollectionElementLinkType } from 'src/app/shared/object-collection/collection-element-link.type';
 import { ListableObject } from 'src/app/shared/object-collection/shared/listable-object.model';
-import { ThemedComponent } from '../../theme-support/themed.component';
 import { PaginatedSearchOptions } from 'src/app/shared/search/models/paginated-search-options.model';
 import { SearchResult } from 'src/app/shared/search/models/search-result.model';
+
+import { ThemedComponent } from '../../theme-support/themed.component';
 import {
   SearchResultsComponent,
   SelectionConfig,
@@ -28,7 +28,6 @@ import {
   selector: 'ds-search-results',
   styleUrls: [],
   templateUrl: '../../theme-support/themed.component.html',
-  standalone: true,
 })
 export class ThemedSearchResultsComponent extends ThemedComponent<SearchResultsComponent> {
 

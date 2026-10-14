@@ -23,7 +23,6 @@ import {
   distinctUntilChanged,
   map,
 } from 'rxjs/operators';
-
 import {
   SortDirection,
   SortOptions,
@@ -34,26 +33,36 @@ import { Context } from 'src/app/core/shared/context.model';
 import { PageInfo } from 'src/app/core/shared/page-info.model';
 import { ViewMode } from 'src/app/core/shared/view-mode.model';
 import { isEmpty } from 'src/app/shared/empty.util';
+import { CollectionElementLinkType } from 'src/app/shared/object-collection/collection-element-link.type';
+import { ListableObject } from 'src/app/shared/object-collection/shared/listable-object.model';
 import { ObjectDetailComponent } from 'src/app/shared/object-detail/object-detail.component';
 import { ObjectGeospatialMapComponent } from 'src/app/shared/object-geospatial-map/object-geospatial-map.component';
 import { ObjectGridComponent } from 'src/app/shared/object-grid/object-grid.component';
-import { ThemedObjectListComponent } from '../object-list/themed-object-list.component';
 import { ObjectTableComponent } from 'src/app/shared/object-table/object-table.component';
 import { PaginationComponentOptions } from 'src/app/shared/pagination/pagination-component-options.model';
 import { setPlaceHolderAttributes } from 'src/app/shared/utils/object-list-utils';
-import { CollectionElementLinkType } from 'src/app/shared/object-collection/collection-element-link.type';
-import { ListableObject } from 'src/app/shared/object-collection/shared/listable-object.model';
+
+import { ThemedObjectListComponent } from '../object-list/themed-object-list.component';
 
 /**
  * Component that can render a list of listable objects in different view modes
  */
+
 @Component({
   selector: 'ds-viewable-collection',
   styleUrls: ['./object-collection.component.scss'],
   templateUrl: './object-collection.component.html',
-  standalone: true,
-  imports: [ThemedObjectListComponent, NgClass, ObjectGridComponent, ObjectDetailComponent, AsyncPipe, ObjectTableComponent, ObjectGeospatialMapComponent],
+  imports: [
+    AsyncPipe,
+    NgClass,
+    ObjectDetailComponent,
+    ObjectGeospatialMapComponent,
+    ObjectGridComponent,
+    ObjectTableComponent,
+    ThemedObjectListComponent,
+  ],
 })
+
 export class ObjectCollectionComponent implements OnInit {
   /**
    * The list of listable objects to render in this component

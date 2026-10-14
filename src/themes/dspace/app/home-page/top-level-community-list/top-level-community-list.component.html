@@ -3,13 +3,14 @@
     <div class="area-communities">
       <!-- Communities Scroll Container -->
       <div class="communities-scroll-wrapper">
-        <button 
-          class="scroll-btn scroll-btn-prev" 
-          *ngIf="showPrevButton"
-          (click)="scrollPrev()"
-          aria-label="Scroll communities left">
-          <i class="fas fa-chevron-left" aria-hidden="true"></i>
-        </button>
+        @if (showPrevButton) {
+          <button
+            class="scroll-btn scroll-btn-prev"
+            (click)="scrollPrev()"
+            aria-label="Scroll communities left">
+            <i class="fas fa-chevron-left" aria-hidden="true"></i>
+          </button>
+        }
 
         <div class="communities-scroll-container" #scrollContainer (scroll)="updateScrollButtons()">
           @for (community of communities; track community.id) {
@@ -24,13 +25,14 @@
           }
         </div>
 
-        <button 
-          class="scroll-btn scroll-btn-next" 
-          *ngIf="showNextButton"
-          (click)="scrollNext()"
-          aria-label="Scroll communities right">
-          <i class="fas fa-chevron-right" aria-hidden="true"></i>
-        </button>
+        @if (showNextButton) {
+          <button
+            class="scroll-btn scroll-btn-next"
+            (click)="scrollNext()"
+            aria-label="Scroll communities right">
+            <i class="fas fa-chevron-right" aria-hidden="true"></i>
+          </button>
+        }
       </div>
     </div>
   }

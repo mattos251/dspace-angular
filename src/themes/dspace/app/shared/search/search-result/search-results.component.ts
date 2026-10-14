@@ -12,7 +12,6 @@ import {
   BehaviorSubject,
   Observable,
 } from 'rxjs';
-
 import { SortOptions } from 'src/app/core/cache/models/sort-options.model';
 import { PaginatedList } from 'src/app/core/data/paginated-list.model';
 import { RemoteData } from 'src/app/core/data/remote-data';
@@ -53,7 +52,6 @@ export interface SelectionConfig {
     fadeIn,
     fadeInOut,
   ],
-  standalone: true,
   imports: [
     AsyncPipe,
     ErrorComponent,
@@ -76,7 +74,7 @@ export class SearchResultsComponent {
    */
   activeFilters$: Observable<SearchFilter[]>;
 
-  @Input() layout: 'list' | 'card' = 'card'
+  @Input() layout: 'list' | 'card' = 'card';
 
   /**
    * Filter applied to show labels, once populated the activeFilters$ will be loaded
