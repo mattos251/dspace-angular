@@ -12,21 +12,21 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { ActivatedRoute } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 
-import { Community } from '../../../core/shared/community.model';
-import { SearchService } from '../../../core/shared/search/search.service';
-import { SearchConfigurationService } from '../../../core/shared/search/search-configuration.service';
-import { ErrorComponent } from '../../error/error.component';
-import { getMockThemeService } from '../../mocks/theme-service.mock';
+import { Community } from '../../../../../../app/core/shared/community.model';
+import { SearchService } from '../../../../../../app/core/shared/search/search.service';
+import { SearchConfigurationService } from '../../../../../../app/core/shared/search/search-configuration.service';
+import { ErrorComponent } from '../../../../../../app/shared/error/error.component';
+import { getMockThemeService } from '../../../../../../app/shared/mocks/theme-service.mock';
 import { ObjectCollectionComponent } from '../../object-collection/object-collection.component';
-import { createFailedRemoteDataObject } from '../../remote-data.utils';
-import { ActivatedRouteStub } from '../../testing/active-router.stub';
-import { QueryParamsDirectiveStub } from '../../testing/query-params-directive.stub';
-import { SearchConfigurationServiceStub } from '../../testing/search-configuration-service.stub';
-import { SearchServiceStub } from '../../testing/search-service.stub';
-import { ThemeService } from '../../theme-support/theme.service';
-import { SearchExportCsvComponent } from '../search-export-csv/search-export-csv.component';
+import { createFailedRemoteDataObject } from '../../../../../../app/shared/remote-data.utils';
+import { ActivatedRouteStub } from '../../../../../../app/shared/testing/active-router.stub';
+import { QueryParamsDirectiveStub } from '../../../../../../app/shared/testing/query-params-directive.stub';
+import { SearchConfigurationServiceStub } from '../../../../../../app/shared/testing/search-configuration-service.stub';
+import { SearchServiceStub } from '../../../../../../app/shared/testing/search-service.stub';
+import { ThemeService } from '../../../../../../app/shared/theme-support/theme.service';
+import { SearchExportCsvComponent } from '../../../../../../app/shared/search/search-export-csv/search-export-csv.component';
 import { SearchResultsComponent } from './search-results.component';
-import { SearchResultsSkeletonComponent } from './search-results-skeleton/search-results-skeleton.component';
+import { SearchResultsSkeletonComponent } from '../../../../../../app/shared/search/search-results/search-results-skeleton/search-results-skeleton.component';
 
 describe('SearchResultsComponent', () => {
   let comp: SearchResultsComponent;
