@@ -5773,6 +5773,8 @@
 
   "vocabulary-treeview.tree.description.srsc": "Research Subject Categories",
 
+  "vocabulary-treeview.tree.description.cnpq": "Select the project's field of activity or area of knowledge based on the CNPq classification tree.",
+
   "vocabulary-treeview.info": "Select a subject to add as search filter",
 
   "uploader.browse": "browse",

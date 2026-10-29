@@ -8389,6 +8389,9 @@
 
   // "vocabulary-treeview.info": "Select a subject to add as search filter",
   "vocabulary-treeview.info": "Selecione um assunto para adicionar como filtro de pesquisa",
+  
+  // "vocabulary-treeview.tree.description.cnpq":"select the desired CNPq area",
+  "vocabulary-treeview.tree.description.cnpq": "Selecione a área de atuação ou conhecimento do projeto com base na árvore de especialidades do CNPq.",
 
   // "uploader.browse": "browse",
   "uploader.browse": "navegar",
