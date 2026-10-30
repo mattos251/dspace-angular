@@ -3161,15 +3161,15 @@
 
   // "form.number-picker.label.Year": "Year",
   // TODO New key - Add a translation
-  "form.number-picker.label.Year": "Year",
+  "form.number-picker.label.Year": "Ano",
 
   // "form.number-picker.label.Month": "Month",
   // TODO New key - Add a translation
-  "form.number-picker.label.Month": "Month",
+  "form.number-picker.label.Month": "Mês",
 
   // "form.number-picker.label.Day": "Day",
   // TODO New key - Add a translation
-  "form.number-picker.label.Day": "Day",
+  "form.number-picker.label.Day": "Dia",
 
   // "form.repeatable.sort.tip": "Drop the item in the new position",
   "form.repeatable.sort.tip": "Solte o item na nova posição",

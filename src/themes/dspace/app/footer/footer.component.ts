@@ -10,6 +10,7 @@ import {
   Observable,
   of,
 } from 'rxjs';
+
 import { NotifyInfoService } from 'src/app/core/coar-notify/notify-info/notify-info.service';
 import { AuthorizationDataService } from 'src/app/core/data/feature-authorization/authorization-data.service';
 import { FeatureID } from 'src/app/core/data/feature-authorization/feature-id';
