@@ -14,9 +14,9 @@ import {
 import {
   BehaviorSubject,
   combineLatest,
-  from as fromPromise,
+  from,
   Observable,
-  of as observableOf,
+  of,
   Subscription,
 } from 'rxjs';
 import {
@@ -25,7 +25,6 @@ import {
   switchMap,
   tap,
 } from 'rxjs/operators';
-
 import { GenericConstructor } from 'src/app/core/shared/generic-constructor';
 import {
   hasNoValue,
@@ -111,7 +110,7 @@ export abstract class ThemedComponent<T extends object> implements AfterViewInit
 
     if (hasNoValue(this.lazyLoadObs)) {
       this.lazyLoadObs = combineLatest([
-        observableOf(changes),
+        of(changes),
         this.resolveThemedComponent(this.themeService.getThemeName()).pipe(
           switchMap((themedFile: any) => {
             if (hasValue(themedFile) && hasValue(themedFile[this.getComponentName()])) {
@@ -120,7 +119,7 @@ export abstract class ThemedComponent<T extends object> implements AfterViewInit
               return [themedFile[this.getComponentName()]];
             } else {
               // otherwise import and return the default component
-              return fromPromise(this.importUnthemedComponent()).pipe(
+              return from(this.importUnthemedComponent()).pipe(
                 tap(() => this.usedTheme = BASE_THEME_NAME),
                 map((unthemedFile: any) => {
                   return unthemedFile[this.getComponentName()];
@@ -175,7 +174,7 @@ export abstract class ThemedComponent<T extends object> implements AfterViewInit
    */
   private resolveThemedComponent(themeName?: string, checkedThemeNames: string[] = []): Observable<any> {
     if (isNotEmpty(themeName)) {
-      return fromPromise(this.importThemedComponent(themeName)).pipe(
+      return from(this.importThemedComponent(themeName)).pipe(
         tap(() => this.usedTheme = themeName),
         catchError(() => {
           // Try the next ancestor theme instead
@@ -190,7 +189,7 @@ export abstract class ThemedComponent<T extends object> implements AfterViewInit
       );
     } else {
       // If we got here, we've failed to import this component from any ancestor theme → fall back to unthemed
-      return observableOf(null);
+      return of(null);
     }
   }
 }

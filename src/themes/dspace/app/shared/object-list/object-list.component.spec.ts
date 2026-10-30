@@ -11,9 +11,9 @@ import {
 } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 
-import { PaginationComponent } from '../pagination/pagination.component';
+import { PaginationComponent } from '../../../../../app/shared/pagination/pagination.component';
 import { ObjectListComponent } from './object-list.component';
-import { SelectableListService } from './selectable-list/selectable-list.service';
+import { SelectableListService } from '../../../../../app/shared/object-list/selectable-list/selectable-list.service';
 
 describe('ObjectListComponent', () => {
   let comp: ObjectListComponent;

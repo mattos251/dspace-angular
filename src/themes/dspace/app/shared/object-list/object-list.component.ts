@@ -7,7 +7,6 @@ import {
   Output,
   ViewEncapsulation,
 } from '@angular/core';
-
 import {
   SortDirection,
   SortOptions,
@@ -19,24 +18,32 @@ import { ViewMode } from 'src/app/core/shared/view-mode.model';
 import { fadeIn } from 'src/app/shared/animations/fade';
 import { CollectionElementLinkType } from 'src/app/shared/object-collection/collection-element-link.type';
 import { ImportableListItemControlComponent } from 'src/app/shared/object-collection/shared/importable-list-item-control/importable-list-item-control.component';
-import { ListableObject } from 'src/app/shared//object-collection/shared/listable-object.model';
+import { ListableObject } from 'src/app/shared/object-collection/shared/listable-object.model';
 import { ListableObjectComponentLoaderComponent } from 'src/app/shared/object-collection/shared/listable-object/listable-object-component-loader.component';
 import { SelectableListItemControlComponent } from 'src/app/shared/object-collection/shared/selectable-list-item-control/selectable-list-item-control.component';
+import { SelectableListService } from 'src/app/shared/object-list/selectable-list/selectable-list.service';
 import { PaginationComponent } from 'src/app/shared/pagination/pagination.component';
 import { PaginationComponentOptions } from 'src/app/shared/pagination/pagination-component-options.model';
 import { BrowserOnlyPipe } from 'src/app/shared/utils/browser-only.pipe';
-import { SelectableListService } from 'src/app/shared/object-list/selectable-list/selectable-list.service';
+
 
 @Component({
   changeDetection: ChangeDetectionStrategy.Default,
   encapsulation: ViewEncapsulation.Emulated,
-  selector: 'ds-base-object-list',
+  selector: 'ds-themed-object-list',
   styleUrls: ['./object-list.component.scss'],
   templateUrl: './object-list.component.html',
   animations: [fadeIn],
-  standalone: true,
-  imports: [PaginationComponent, NgClass, SelectableListItemControlComponent, ImportableListItemControlComponent, ListableObjectComponentLoaderComponent, BrowserOnlyPipe],
+  imports: [
+    BrowserOnlyPipe,
+    ImportableListItemControlComponent,
+    ListableObjectComponentLoaderComponent,
+    NgClass,
+    PaginationComponent,
+    SelectableListItemControlComponent,
+  ],
 })
+
 export class ObjectListComponent {
   /**
    * Expose ViewMode enum to template

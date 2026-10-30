@@ -25,7 +25,10 @@ import {
   selector: 'ds-themed-footer',
   styleUrls: ['footer.component.scss'],
   templateUrl: 'footer.component.html',
-  imports: [DatePipe, TranslateModule],
+  imports: [
+    DatePipe,
+    TranslateModule,
+  ],
 })
 export class FooterComponent implements OnInit {
   dateObj: number = Date.now();

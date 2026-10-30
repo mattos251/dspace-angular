@@ -4,7 +4,6 @@ import {
   Input,
   Output,
 } from '@angular/core';
-
 import {
   SortDirection,
   SortOptions,
@@ -15,6 +14,7 @@ import { Context } from 'src/app/core/shared/context.model';
 import { CollectionElementLinkType } from 'src/app/shared/object-collection/collection-element-link.type';
 import { ListableObject } from 'src/app/shared/object-collection/shared/listable-object.model';
 import { PaginationComponentOptions } from 'src/app/shared/pagination/pagination-component-options.model';
+
 import { ThemedComponent } from '../theme-support/themed.component';
 import { ObjectListComponent } from './object-list.component';
 
@@ -25,8 +25,8 @@ import { ObjectListComponent } from './object-list.component';
   selector: 'ds-object-list',
   styleUrls: [],
   templateUrl: '../theme-support/themed.component.html',
-  standalone: true,
 })
+
 export class ThemedObjectListComponent extends ThemedComponent<ObjectListComponent> {
 
   /**
